@@ -124,6 +124,12 @@ public class StartPage extends ParentPage {
     }
 
 
+    public StartPage checkIsRedirectOnStartPage(){
+       Assert.assertTrue(elementIsDisplayed(header.getLoginButton()));
+        return this;
+    }
+
+
 
 
 

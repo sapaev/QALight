@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.chrome.ChromeOptions;
 import pages.HomePage;
 import pages.StartPage;
 
@@ -25,8 +26,10 @@ public class BaseTest {
 
     @Before
     public void setUp() {
+        ChromeOptions ops = new ChromeOptions();
+        ops.addArguments("--remote-allow-origins=*");
         WebDriverManager.chromedriver().setup();
-        webDriver = new ChromeDriver();
+        webDriver = new ChromeDriver(ops);
         webDriver.manage().window().maximize();
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         startPage = new StartPage(webDriver);

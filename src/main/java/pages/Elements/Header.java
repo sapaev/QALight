@@ -1,9 +1,13 @@
 package pages.Elements;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import pages.CommonActios;
+import pages.HomePage;
+import pages.SearchingWithFilterPage;
 
 public class Header extends CommonActios {
 
@@ -19,6 +23,22 @@ public class Header extends CommonActios {
 
     @FindBy(xpath = ".//a[@jtype='click']/em[@title='Вийти']")
     private WebElement logOutButton;
+
+
+
+    @FindBy(xpath = "//input[@id='ek-search']")
+    private WebElement searchField;
+
+    @FindBy(xpath = "//button[@name='search_but_']")
+    private WebElement searchButton;
+
+
+
+    private String navigationTab=".//a[contains(text(),\"%s\")]\n";
+
+    private String subCategory="//div[@class='mainmenu-sublist']//span[text()='Ноутбуки']";
+
+    Actions actions=new Actions(webDriver);
 
 /*
     @FindBy(xpath = ".//div[@class='ib h']")
@@ -49,12 +69,27 @@ public class Header extends CommonActios {
     }
 
 
+    public WebElement getSearchButton() {
+        return searchButton;
+    }
+
+    public WebElement getSearchField() {
+        return searchField;
+    }
 
 
+    public void hoverToTab(String nameOfTab){
+        elementIsDisplayed(String.format(navigationTab,nameOfTab));
+        WebElement tab= webDriver.findElement(By.xpath(String.format(navigationTab,nameOfTab)));
+        actions.moveToElement(tab).build().perform();
+    }
 
-
-
-
+    public SearchingWithFilterPage clickOnSubcategory(String nameOfSubcategory){
+        elementIsDisplayed(String.format(subCategory,nameOfSubcategory));
+        WebElement subcat= webDriver.findElement(By.xpath(String.format(subCategory,nameOfSubcategory)));
+        clickOnElement(subcat);
+        return new SearchingWithFilterPage(webDriver);
+    }
 }
 
 

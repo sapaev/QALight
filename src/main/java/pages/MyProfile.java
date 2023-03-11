@@ -1,5 +1,6 @@
 package pages;
 
+import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,7 +31,7 @@ public class MyProfile extends ParentPage {
     }
 
     public MyProfile checkIsRedirectToMyProfilePage() {
-        elementIsDisplayed(profileInfo);
+        Assert.assertTrue(elementIsDisplayed(profileInfo));
         return this;
     }
 

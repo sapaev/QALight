@@ -1,12 +1,14 @@
 package pages;
 
+import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class EditProfilePage extends ParentPage{
 
-    @FindBy(xpath = "//a[@class='ek-form-btn orange-border' and @jid='mui_delete_user_window']")
+    @FindBy(xpath = "//a[@class='ek-form-btn orange-border' and text()='ВИДАЛИТИ ОБЛІКОВИЙ ЗАПИС']")
     private WebElement deleteProfileButton;
 
     @FindBy(xpath = "//button[@type='submit']")
@@ -15,13 +17,16 @@ public class EditProfilePage extends ParentPage{
     @FindBy(xpath = "//input[@class='ek-form-control' and @type='text']")
     private WebElement nickNameField;
 
+    String genderRadioButton="//label[@class='no-select' and text()='%s']";
+
     public EditProfilePage(WebDriver webDriver) {
         super(webDriver);
     }
 
+
     public EditProfilePage checkIsRedirectToEditProfilePage(){
-        elementIsDisplayed(deleteProfileButton);
-        elementIsDisplayed(saveChangeButton);
+        Assert.assertTrue(elementIsDisplayed(deleteProfileButton));
+        Assert.assertTrue(elementIsDisplayed(saveChangeButton));
         return this;
     }
 
@@ -30,6 +35,14 @@ public class EditProfilePage extends ParentPage{
         enterTextInField(nickNameField, name);
         return this;
     }
+
+    public EditProfilePage editGenredOfProfile(String gender){
+        elementIsDisplayed(String.format(genderRadioButton,gender));
+        selectRadioButton(String.format(genderRadioButton,gender));
+        return this;
+    }
+
+
 
 
     public ResultsEditingProfilePage saveChanges() {

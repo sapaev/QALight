@@ -1,5 +1,6 @@
 package pages;
 
+import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,9 +11,10 @@ public class ResultsEditingProfilePage extends ParentPage{
     @FindBy(xpath = "//div[@class='user-profile-edit']")
     private WebElement editedProfileInformation;
 
-
     @FindBy(xpath = "//div[@class='user-menu__name']/a[@class='info-nick']")
     private WebElement updatedUserName;
+
+    private String genderInformation="//div[@class='ph-reg' and text()=' %s']";
 
 
     public ResultsEditingProfilePage(WebDriver webDriver) {
@@ -20,7 +22,7 @@ public class ResultsEditingProfilePage extends ParentPage{
     }
 
     public ResultsEditingProfilePage checkIsRedirectToResultsEditingProfilePage(){
-        elementIsDisplayed(editedProfileInformation);
+        Assert.assertTrue(elementIsDisplayed(editedProfileInformation));
         return this;
     }
 
@@ -31,4 +33,8 @@ public class ResultsEditingProfilePage extends ParentPage{
         return this;
     }
 
+    public ResultsEditingProfilePage checkEditingGender(String gender) {
+        Assert.assertTrue(elementIsDisplayed(String.format(genderInformation,gender)));
+        return this;
+    }
 }

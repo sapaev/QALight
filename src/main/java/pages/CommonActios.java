@@ -76,7 +76,20 @@ public class CommonActios {
         }
     }
 
+    protected void selectRadioButton(WebElement webElement){
+        if (!webElement.isSelected()){
+            clickOnElement(webElement);
+        }else {
+            logger.info("Radiobutton is already selected");
+        }
+    }
 
+
+
+    protected void selectRadioButton(String radio){
+        WebElement radiobutton=webDriver.findElement(By.xpath(radio));
+        selectRadioButton(radiobutton);
+    }
 
 
 
@@ -140,8 +153,13 @@ public class CommonActios {
 
 
     protected boolean elementIsDisplayed(String text){
-        WebElement webElement=webDriver.findElement(By.xpath(text));
-        return elementIsDisplayed(webElement);
+        try{
+            WebElement webElement=webDriver.findElement(By.xpath(text));
+            return elementIsDisplayed(webElement);
+        }catch (Exception e){
+            return false;
+        }
+
     }
 
 

@@ -21,7 +21,6 @@ public class RegistrationTest extends BaseTest {
     }
 
 
-
     @Test
     public void loginCheckWithValidValues(){
         startPage.openStartPage();
@@ -29,7 +28,6 @@ public class RegistrationTest extends BaseTest {
                 .clickOnSubmitLoginButton()
                 .checkIsRedirectOnHomePage();
     }
-
 
 
     @Test

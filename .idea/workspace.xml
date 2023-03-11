@@ -4,23 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e0ea29-ec2e-442c-b044-529260152f31" name="Changes" comment="New project">
-      <change afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/libs/Creds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CommonActios.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/EditProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/Elements/Header.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/MyProfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ParentPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ResultsEditingProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/StartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/EditProfileTest/EditProfileTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RegistrationTest/RegistrationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" afterDir="false" />
+    <list default="true" id="46e0ea29-ec2e-442c-b044-529260152f31" name="Changes" comment="Дипломный проект">
+      <change afterPath="$PROJECT_DIR$/src/Test cases.TXT" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ItemCardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/ResultsSearchingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SearchingWithFilterPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FindItemWithFilterTest/FindItemWithFilterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/LogOutTest/LogOutTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SearchItemWithSearchField/SearchItemWithSearchFieldTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomePage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CommonActios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CommonActios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/EditProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/EditProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/Elements/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Elements/Header.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MyProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MyProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ResultsEditingProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ResultsEditingProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/StartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/EditProfileTest/EditProfileTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EditProfileTest/EditProfileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTest/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationTest/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +71,8 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="JUnit.RegistrationTest">
-    <configuration name="EditProfileTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.EditProfileTest.editGenderInProfile">
+    <configuration name="EditProfileTest.editGenderInProfile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
         <pattern>
@@ -79,69 +82,70 @@
       </extension>
       <option name="PACKAGE_NAME" value="EditProfileTest" />
       <option name="MAIN_CLASS_NAME" value="EditProfileTest.EditProfileTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EditProfileTest.editProfile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="QALight" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EditProfileTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="EditProfileTest" />
-      <option name="MAIN_CLASS_NAME" value="EditProfileTest.EditProfileTest" />
-      <option name="METHOD_NAME" value="editProfile" />
+      <option name="METHOD_NAME" value="editGenderInProfile" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindItemWithFilterTest.searchItemWithFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="RegistrationTest.*" />
+          <option name="PATTERN" value="FindItemWithFilterTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="RegistrationTest" />
-      <option name="MAIN_CLASS_NAME" value="RegistrationTest.RegistrationTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationTest.autorization" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="QALight" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RegistrationTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RegistrationTest" />
-      <option name="MAIN_CLASS_NAME" value="RegistrationTest.RegistrationTest" />
-      <option name="METHOD_NAME" value="autorization" />
+      <option name="PACKAGE_NAME" value="FindItemWithFilterTest" />
+      <option name="MAIN_CLASS_NAME" value="FindItemWithFilterTest.FindItemWithFilterTest" />
+      <option name="METHOD_NAME" value="searchItemWithFilter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest.baseTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchItemWithSearchFieldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="RegistrationTest.*" />
+          <option name="PATTERN" value="SearchItemWithSearchField.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="RegistrationTest" />
-      <option name="MAIN_CLASS_NAME" value="RegistrationTest.RegistrationTest" />
-      <option name="METHOD_NAME" value="baseTest" />
+      <option name="PACKAGE_NAME" value="SearchItemWithSearchField" />
+      <option name="MAIN_CLASS_NAME" value="SearchItemWithSearchField.SearchItemWithSearchFieldTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchItemWithSearchFieldTest.openCardOfItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QALight" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SearchItemWithSearchField.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SearchItemWithSearchField" />
+      <option name="MAIN_CLASS_NAME" value="SearchItemWithSearchField.SearchItemWithSearchFieldTest" />
+      <option name="METHOD_NAME" value="openCardOfItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchItemWithSearchFieldTest.searchItemWithValidValueWithTypeOfItemAndBrand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QALight" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SearchItemWithSearchField.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SearchItemWithSearchField" />
+      <option name="MAIN_CLASS_NAME" value="SearchItemWithSearchField.SearchItemWithSearchFieldTest" />
+      <option name="METHOD_NAME" value="searchItemWithValidValueWithTypeOfItemAndBrand" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RegistrationTest" />
-        <item itemvalue="JUnit.EditProfileTest" />
-        <item itemvalue="JUnit.RegistrationTest.autorization" />
-        <item itemvalue="JUnit.EditProfileTest.editProfile" />
-        <item itemvalue="JUnit.RegistrationTest.baseTest" />
+        <item itemvalue="JUnit.EditProfileTest.editGenderInProfile" />
+        <item itemvalue="JUnit.SearchItemWithSearchFieldTest.openCardOfItem" />
+        <item itemvalue="JUnit.SearchItemWithSearchFieldTest" />
+        <item itemvalue="JUnit.FindItemWithFilterTest.searchItemWithFilter" />
+        <item itemvalue="JUnit.SearchItemWithSearchFieldTest.searchItemWithValidValueWithTypeOfItemAndBrand" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673735898537</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="New project">
+      <created>1676897074025</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676897074025</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +221,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New project" />
-    <option name="LAST_COMMIT_MESSAGE" value="New project" />
+    <MESSAGE value="Дипломный проект" />
+    <option name="LAST_COMMIT_MESSAGE" value="Дипломный проект" />
   </component>
 </project>

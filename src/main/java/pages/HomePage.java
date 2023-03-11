@@ -62,4 +62,21 @@ public class HomePage extends ParentPage {
         }
 
     }
+
+    public HomePage inputNameItemInSeachField(String text) {
+        enterTextInField(header.getSearchField(), text);
+        return this;
+    }
+
+    public ResultsSearchingPage clickOnstartSearchingButton() {
+        clickOnElement(header.getSearchButton());
+        return new ResultsSearchingPage(webDriver);
+    }
+
+
+
+    public StartPage logOutFromHomePage(){
+        clickOnElement(header.getLogOutButton());
+        return new StartPage(webDriver);
+    }
 }

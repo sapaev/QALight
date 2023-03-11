@@ -7,7 +7,13 @@ import org.junit.Test;
 
 public class EditProfileTest extends BaseTest {
 
-    private final String newNickMame="Камал Сапаев";
+    private final String newNickMame="Камал Сапаев Тестер";
+
+    private final String genderMale="Ч";
+    private final String genderFemale="Ж";
+
+    private final String checkGenderMale="чоловіча";
+    private final String checkGenderFemale="женский";
 
     @Before
     public void autorization() {
@@ -31,7 +37,18 @@ public class EditProfileTest extends BaseTest {
                 .checkEditingProfileName(newNickMame)
         ;
 
-
+    }
+        @Test
+        public void editGenderInProfile() {
+            homePage.openMyProfilePage()
+                    .checkIsRedirectToMyProfilePage()
+                    .openEditProfilePage()
+                    .checkIsRedirectToEditProfilePage()
+                    .editGenredOfProfile(genderMale)
+                    .saveChanges()
+                    .checkIsRedirectToResultsEditingProfilePage()
+                    .checkEditingGender(checkGenderMale)
+            ;
 
     }
 
