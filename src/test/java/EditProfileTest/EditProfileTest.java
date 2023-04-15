@@ -52,6 +52,34 @@ public class EditProfileTest extends BaseTest {
 
     }
 
+    @Test
+    public void editAgeForUser(){
+        homePage.openMyProfilePage()
+                .checkIsRedirectToMyProfilePage()
+                .openEditProfilePage()
+                .checkIsRedirectToEditProfilePage()
+                .editAgeOfUser(1993)
+                .saveChanges()
+                .checkIsRedirectToResultsEditingProfilePage()
+                .checkEditingAgeOfUser(1993)
+        ;
+    }
+
+
+    //баг
+    @Test
+    public void editPhotoOfProfile(){
+        homePage.openMyProfilePage()
+                .checkIsRedirectToMyProfilePage()
+                .openEditProfilePage()
+                .checkIsRedirectToEditProfilePage()
+                .changePhoto("C:\\Users\\qasap\\Downloads\\photo1660565969.jpeg")
+                .saveChanges()
+                .checkIsRedirectToResultsEditingProfilePage()
+
+        ;
+    }
+
 
 
 

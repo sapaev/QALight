@@ -16,6 +16,8 @@ public class ResultsEditingProfilePage extends ParentPage{
 
     private String genderInformation="//div[@class='ph-reg' and text()=' %s']";
 
+    private String ageInformation="//div[@class=\"ph-reg\" and contains(text(),'%d')]";
+
 
     public ResultsEditingProfilePage(WebDriver webDriver) {
         super(webDriver);
@@ -35,6 +37,12 @@ public class ResultsEditingProfilePage extends ParentPage{
 
     public ResultsEditingProfilePage checkEditingGender(String gender) {
         Assert.assertTrue(elementIsDisplayed(String.format(genderInformation,gender)));
+        return this;
+    }
+
+
+    public ResultsEditingProfilePage checkEditingAgeOfUser(int earOfBirth){
+        Assert.assertTrue(elementIsDisplayed(String.format(ageInformation,earOfBirth)));
         return this;
     }
 }

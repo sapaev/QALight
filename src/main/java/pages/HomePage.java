@@ -79,4 +79,7 @@ public class HomePage extends ParentPage {
         clickOnElement(header.getLogOutButton());
         return new StartPage(webDriver);
     }
+
+
+
 }

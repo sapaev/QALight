@@ -43,6 +43,11 @@ public class SearchingWithFilterPage extends ParentPage {
     @FindBy(xpath = "//span[text()='Рейтинг брендів']")
     private WebElement ratingOfBrandsButton;
 
+
+
+    @FindBy(xpath = "//div[@class=\"all-link\"]/a")
+    private WebElement showAllItemsButton;
+
     Actions actions = new Actions(webDriver);
 
     public SearchingWithFilterPage(WebDriver webDriver) {
@@ -115,6 +120,9 @@ public class SearchingWithFilterPage extends ParentPage {
 
                 String selectedCheckBox = listOfBrandCheckboxes.get(i).getText();
                 selectedBrand.add(selectedCheckBox);
+
+
+                //webDriver.findElement(By.xpath("item")).findElement(By.xpath("sub-item"));
             }
         }
 
@@ -122,4 +130,9 @@ public class SearchingWithFilterPage extends ParentPage {
     }
 
 
+    public ResultsSearchingPage clickOnShowAllItemsButton() {
+       elementIsDisplayed(showAllItemsButton);
+       clickOnElement(showAllItemsButton);
+       return new ResultsSearchingPage(webDriver);
+    }
 }

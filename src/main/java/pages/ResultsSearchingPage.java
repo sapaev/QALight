@@ -3,6 +3,7 @@ package pages;
 import org.assertj.core.api.SoftAssertions;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -31,6 +32,13 @@ public class ResultsSearchingPage extends ParentPage{
     @FindBy(xpath = "//div[@class='model-short-div list-item--goods-group ms-grp ']")
     private WebElement extentedlistOfResults;
 
+    @FindBy(xpath = "//td[@class='pict_results']/table")
+    private WebElement itemFromShortList;
+
+    @FindBy(xpath = "//div[@class=' nobr']/a/span")
+    private WebElement showListOfResultsButton;
+
+
     @FindBy(xpath = "//span[@class='u']")
     private List<WebElement> listOfResultsFromExtentedList;
 
@@ -47,11 +55,7 @@ public class ResultsSearchingPage extends ParentPage{
 
 
     public ResultsSearchingPage checkIsRedirectOnResultsSearchingPage(){
-        try {
-            Assert.assertTrue("Searching is successfully",elementIsDisplayed(itemFromResultList));
-        }catch (Exception e){
-            Assert.assertTrue("Searching is successfully", elementIsDisplayed(extentedlistOfResults));
-        }
+            Assert.assertTrue("Searching is successfully", elementIsDisplayed(extentedlistOfResults) || elementIsDisplayed(itemFromShortList) || elementIsDisplayed(itemFromResultList));
         return this;
     }
 
@@ -68,7 +72,16 @@ public class ResultsSearchingPage extends ParentPage{
 
 
 
-public ResultsSearchingPage checkSuccessfullySearchingWithTextInItemsList(String itemName){
+public ResultsSearchingPage checkSuccessfullySearchingWithTextInItemsList(String itemName) throws InterruptedException {
+        Thread.sleep(5000);
+        if (elementIsDisplayed("//div[@class='recaptcha-checkbox-border']")){
+            webDriverWait10.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@class='recaptcha-checkbox-border']")));
+            clickOnElement("//div[@class='recaptcha-checkbox-border']");
+        }
+    if(elementIsDisplayed(itemFromShortList)){
+            clickOnElement(showListOfResultsButton);
+    }
+
     for (int i=0; i<listOfResults.size(); i++){
         elementIsDisplayed(listOfResults.get(i));
         Assert.assertThat("",listOfResults.get(i).getText(), CoreMatchers.containsString(itemName));
@@ -76,27 +89,51 @@ public ResultsSearchingPage checkSuccessfullySearchingWithTextInItemsList(String
             actions.moveToElement(listOfResults.get(i+1)).build().perform();
         }
     }
+
+
+
     return this;
 }
 
 
 
     public ResultsSearchingPage checkSuccessfullySearchingWithFilterInItemsList(List<String> array){
-        for (int i=0; i<listOfResultsFromExtentedList.size(); i++){
-            elementIsDisplayed(listOfResultsFromExtentedList.get(i));
-            String itemName=listOfResultsFromExtentedList.get(i).getText();
-              for(int a=0; a<array.size(); a++){
-                  if(itemName.contains(array.get(a))){
-                      Assert.assertThat("Бренды не совпадают",  itemName,CoreMatchers.containsString(array.get(a)));
-                      System.out.println("бренды совпали: чекбокс "+array.get(a)+" нашел товар "+itemName);
-                  }
 
-              }
-            if(i<listOfResultsFromExtentedList.size()-1){
-                actions.moveToElement(listOfResultsFromExtentedList.get(i+1)).build().perform();
+        if (elementIsDisplayed(extentedlistOfResults)) {
+            for (int i = 0; i < listOfResultsFromExtentedList.size(); i++) {
+                elementIsDisplayed(listOfResultsFromExtentedList.get(i));
+                String itemName = listOfResultsFromExtentedList.get(i).getText();
+                for (int a = 0; a < array.size(); a++) {
+                    if (itemName.contains(array.get(a))) {
+                        Assert.assertThat("Бренды не совпадают", itemName, CoreMatchers.containsString(array.get(a)));
+                        System.out.println("бренды совпали: чекбокс " + array.get(a) + " нашел товар " + itemName);
+                    }
+
+                }
+                if (i < listOfResultsFromExtentedList.size() - 1) {
+                    actions.moveToElement(listOfResultsFromExtentedList.get(i + 1)).build().perform();
+                }
             }
         }
         return this;
+    }
+
+
+    public ItemCardPage openTheFirstItemOfList(){
+     if(elementIsDisplayed(extentedlistOfResults)){
+        for (WebElement element:listOfResultsFromExtentedList){
+            elementIsDisplayed(element);
+            clickOnElement(element);
+            break;
+        }
+     } else if (elementIsDisplayed(itemFromResultList)){
+         for (WebElement element:listOfResults){
+             elementIsDisplayed(element);
+             clickOnElement(element);
+             break;
+         }
+     }
+        return new ItemCardPage(webDriver);
     }
 
 

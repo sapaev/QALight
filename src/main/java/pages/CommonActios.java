@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.Arrays;
+import java.util.List;
 
 public class CommonActios {
     protected WebDriver webDriver;
@@ -112,10 +114,14 @@ public class CommonActios {
             logger.info(message);
             return state;
         }catch (Exception e){
-            logger.error(webElement.getText()+" is not Displayed");
+            logger.error("Element is not Displayed");
             return false;
         }
     }
+
+
+
+
 
 
     protected void selectTextInDropdown(WebElement dropDown, String vivibleText){

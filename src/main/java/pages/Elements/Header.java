@@ -36,7 +36,7 @@ public class Header extends CommonActios {
 
     private String navigationTab=".//a[contains(text(),\"%s\")]\n";
 
-    private String subCategory="//div[@class='mainmenu-sublist']//span[text()='Ноутбуки']";
+    private String subCategory="//div[@class='mainmenu-sublist']//span[text()='%s']";
 
     Actions actions=new Actions(webDriver);
 
@@ -49,7 +49,13 @@ public class Header extends CommonActios {
     private WebElement countryDropDownList;
 */
 
+    public Header(WebDriver webDriver, Actions actions) {
+        super(webDriver);
+        this.actions = actions;
+    }
+
     public Header(WebDriver webDriver) {
+
         super(webDriver);
     }
 
@@ -78,18 +84,20 @@ public class Header extends CommonActios {
     }
 
 
-    public void hoverToTab(String nameOfTab){
+    public Header hoverToTab(String nameOfTab){
         elementIsDisplayed(String.format(navigationTab,nameOfTab));
         WebElement tab= webDriver.findElement(By.xpath(String.format(navigationTab,nameOfTab)));
         actions.moveToElement(tab).build().perform();
+        return this;
     }
 
     public SearchingWithFilterPage clickOnSubcategory(String nameOfSubcategory){
         elementIsDisplayed(String.format(subCategory,nameOfSubcategory));
-        WebElement subcat= webDriver.findElement(By.xpath(String.format(subCategory,nameOfSubcategory)));
-        clickOnElement(subcat);
+        clickOnElement(String.format(subCategory,nameOfSubcategory));
         return new SearchingWithFilterPage(webDriver);
     }
+
+
 }
 
 

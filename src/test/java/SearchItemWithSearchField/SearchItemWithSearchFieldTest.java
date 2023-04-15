@@ -9,7 +9,13 @@ public class SearchItemWithSearchFieldTest extends BaseTest {
 
 
     private final String nameItem="Монітор Samsung C24F390F";
+
+
+
     private final String validNameItem="Монітор Samsung";
+
+
+    private final String validNameItem2="Ноутбук Asus";
     private final String invalidNameItem="not valid name of item";
 
     @Before
@@ -30,7 +36,7 @@ public class SearchItemWithSearchFieldTest extends BaseTest {
     }
 
     @Test
-    public void searchItemWithValidValueWithTypeOfItemAndBrand(){
+    public void searchItemWithValidValueWithTypeOfItemAndBrand() throws InterruptedException {
         homePage.inputNameItemInSeachField(validNameItem)
                 .clickOnstartSearchingButton()
                 .checkIsRedirectOnResultsSearchingPage()
@@ -39,7 +45,7 @@ public class SearchItemWithSearchFieldTest extends BaseTest {
     }
 
     @Test
-    public void searchItemWithValidValueWithNameOfItem(){
+    public void searchItemWithValidValueWithNameOfItem() throws InterruptedException {
         homePage.inputNameItemInSeachField(nameItem)
                 .clickOnstartSearchingButton()
                 .checkIsRedirectOnResultsSearchingPage()
@@ -49,7 +55,7 @@ public class SearchItemWithSearchFieldTest extends BaseTest {
 
 
     @Test
-    public void openCardOfItem(){
+    public void openCardOfItem() throws InterruptedException {
             homePage.inputNameItemInSeachField(nameItem)
                     .clickOnstartSearchingButton()
                     .checkIsRedirectOnResultsSearchingPage()

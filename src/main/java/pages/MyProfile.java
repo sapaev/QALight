@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.Elements.Header;
 
+import java.util.List;
+
 public class MyProfile extends ParentPage {
 
 
@@ -18,6 +20,12 @@ public class MyProfile extends ParentPage {
     @FindBy(xpath = "//a[@class='user-menu__edit']")
     private WebElement editProfileButton;
 
+
+    @FindBy(xpath = "//a[@class='user-history-item']")
+    private List<WebElement> listOfHistoryItem;
+
+    @FindBy(xpath = "//div[@class='user-history-close']")
+    private List<WebElement> deleteViwedItemButton;
 
     private Header header = new Header(webDriver);
 
@@ -42,7 +50,18 @@ public class MyProfile extends ParentPage {
     }
 
 
+    public int checkIsSizeOfHistoryItem(){
+        return listOfHistoryItem.size();
+    }
 
 
+
+
+    public MyProfile deleteTheLastViewedItem(){
+        if (elementIsDisplayed(listOfHistoryItem.get(0)) && elementIsDisplayed(deleteViwedItemButton.get(0))){
+            clickOnElement(deleteViwedItemButton.get(0));
+        }
+        return this;
+    }
 
 }
