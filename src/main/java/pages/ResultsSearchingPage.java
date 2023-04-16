@@ -82,14 +82,23 @@ public ResultsSearchingPage checkSuccessfullySearchingWithTextInItemsList(String
             clickOnElement(showListOfResultsButton);
     }
 
-    for (int i=0; i<listOfResults.size(); i++){
-        elementIsDisplayed(listOfResults.get(i));
-        Assert.assertThat("",listOfResults.get(i).getText(), CoreMatchers.containsString(itemName));
-        if(i<listOfResults.size()-1){
-            actions.moveToElement(listOfResults.get(i+1)).build().perform();
+    if(elementIsDisplayed(itemFromResultList)) {
+        for (int i = 0; i < listOfResults.size(); i++) {
+            elementIsDisplayed(listOfResults.get(i));
+            Assert.assertThat("", listOfResults.get(i).getText(), CoreMatchers.containsString(itemName));
+            if (i < listOfResults.size() - 1) {
+                actions.moveToElement(listOfResults.get(i + 1)).build().perform();
+            }
+        }
+    } else if (elementIsDisplayed(extentedlistOfResults)) {
+        for (int i = 0; i < listOfResultsFromExtentedList.size(); i++) {
+            elementIsDisplayed(listOfResultsFromExtentedList.get(i));
+            Assert.assertThat("", listOfResultsFromExtentedList.get(i).getText(), CoreMatchers.containsString(itemName));
+            if (i < listOfResults.size() - 1) {
+                actions.moveToElement(listOfResultsFromExtentedList.get(i + 1)).build().perform();
+            }
         }
     }
-
 
 
     return this;

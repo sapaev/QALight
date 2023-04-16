@@ -15,7 +15,7 @@ public class SearchItemWithSearchFieldTest extends BaseTest {
     private final String validNameItem="Монітор Samsung";
 
 
-    private final String validNameItem2="Ноутбук Asus";
+    private final String validNameItem2="Ноутбук Apple";
     private final String invalidNameItem="not valid name of item";
 
     @Before
@@ -37,10 +37,10 @@ public class SearchItemWithSearchFieldTest extends BaseTest {
 
     @Test
     public void searchItemWithValidValueWithTypeOfItemAndBrand() throws InterruptedException {
-        homePage.inputNameItemInSeachField(validNameItem)
+        homePage.inputNameItemInSeachField(validNameItem2)
                 .clickOnstartSearchingButton()
                 .checkIsRedirectOnResultsSearchingPage()
-                .checkSuccessfullySearchingWithTextInItemsList("Samsung")
+                .checkSuccessfullySearchingWithTextInItemsList("Apple")
         ;
     }
 

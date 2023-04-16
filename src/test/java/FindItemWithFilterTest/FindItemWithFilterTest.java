@@ -4,13 +4,7 @@ import baseTest.BaseTest;
 import libs.Creds;
 import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import pages.CommonActios;
 import pages.SearchingWithFilterPage;
-
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class FindItemWithFilterTest extends BaseTest {

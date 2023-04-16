@@ -3,13 +3,12 @@ package CheckOfItemCounterInItemHistoryTest;
 import baseTest.BaseTest;
 import libs.Creds;
 import org.junit.After;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import pages.ItemCardPage;
-import pages.MyProfile;
+
 import pages.ResultsSearchingPage;
-import pages.SearchingWithFilterPage;
+
 
 public class CheckOfItemCounterInItemHistoryTest extends BaseTest {
 

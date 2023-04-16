@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46e0ea29-ec2e-442c-b044-529260152f31" name="Changes" comment="" />
+    <list default="true" id="46e0ea29-ec2e-442c-b044-529260152f31" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/libs/Creds.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/libs/Creds.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ResultsSearchingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ResultsSearchingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CheckOfItemCounterInItemHistoryTest/CheckOfItemCounterInItemHistoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CheckOfItemCounterInItemHistoryTest/CheckOfItemCounterInItemHistoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FindItemWithFilterTest/FindItemWithFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindItemWithFilterTest/FindItemWithFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrationTest/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrationTest/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SearchItemWithSearchField/SearchItemWithSearchFieldTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchItemWithSearchField/SearchItemWithSearchFieldTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +64,7 @@
       <recent name="C:\Users\qasap\QALight\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EditProfileTest.editPhotoOfProfile">
+  <component name="RunManager" selected="JUnit.SearchItemWithSearchFieldTest.searchItemWithValidValueWithTypeOfItemAndBrand">
     <configuration name="CheckOfItemCounterInItemHistoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
@@ -72,39 +80,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckOfItemCounterInItemHistoryTest.testOfCounter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="QALight" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="CheckOfItemCounterInItemHistoryTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="CheckOfItemCounterInItemHistoryTest" />
-      <option name="MAIN_CLASS_NAME" value="CheckOfItemCounterInItemHistoryTest.CheckOfItemCounterInItemHistoryTest" />
-      <option name="METHOD_NAME" value="testOfCounter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EditProfileTest.editPhotoOfProfile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="QALight" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="EditProfileTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="EditProfileTest" />
-      <option name="MAIN_CLASS_NAME" value="EditProfileTest.EditProfileTest" />
-      <option name="METHOD_NAME" value="editPhotoOfProfile" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FindItemWithFilterTest.searchItemWithFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindItemWithFilterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
         <pattern>
@@ -114,8 +90,37 @@
       </extension>
       <option name="PACKAGE_NAME" value="FindItemWithFilterTest" />
       <option name="MAIN_CLASS_NAME" value="FindItemWithFilterTest.FindItemWithFilterTest" />
-      <option name="METHOD_NAME" value="searchItemWithFilter" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LogOutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QALight" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="LogOutTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="LogOutTest" />
+      <option name="MAIN_CLASS_NAME" value="LogOutTest.LogOutTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchItemWithSearchFieldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QALight" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SearchItemWithSearchField.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="SearchItemWithSearchField" />
+      <option name="MAIN_CLASS_NAME" value="SearchItemWithSearchField.SearchItemWithSearchFieldTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,19 +142,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.EditProfileTest.editPhotoOfProfile" />
+      <item itemvalue="JUnit.FindItemWithFilterTest" />
+      <item itemvalue="JUnit.LogOutTest" />
+      <item itemvalue="JUnit.SearchItemWithSearchFieldTest" />
       <item itemvalue="JUnit.CheckOfItemCounterInItemHistoryTest" />
-      <item itemvalue="JUnit.CheckOfItemCounterInItemHistoryTest.testOfCounter" />
-      <item itemvalue="JUnit.FindItemWithFilterTest.searchItemWithFilter" />
       <item itemvalue="JUnit.SearchItemWithSearchFieldTest.searchItemWithValidValueWithTypeOfItemAndBrand" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EditProfileTest.editPhotoOfProfile" />
-        <item itemvalue="JUnit.CheckOfItemCounterInItemHistoryTest.testOfCounter" />
-        <item itemvalue="JUnit.FindItemWithFilterTest.searchItemWithFilter" />
-        <item itemvalue="JUnit.CheckOfItemCounterInItemHistoryTest" />
         <item itemvalue="JUnit.SearchItemWithSearchFieldTest.searchItemWithValidValueWithTypeOfItemAndBrand" />
+        <item itemvalue="JUnit.SearchItemWithSearchFieldTest" />
+        <item itemvalue="JUnit.CheckOfItemCounterInItemHistoryTest" />
+        <item itemvalue="JUnit.FindItemWithFilterTest" />
+        <item itemvalue="JUnit.LogOutTest" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681598829565</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Дипломный проект">
+      <created>1681667948950</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681667948950</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
