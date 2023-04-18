@@ -69,14 +69,14 @@ public class BaseTest {
            return webDriver;
     }
 
-
+/*
     @After
     public void tearDown() {
     logger.info("----------"+testName.getMethodName()+" was ended----------");
     webDriver.quit();
     logger.info("Browser was closed");
     }
-
+*/
 
 }
 

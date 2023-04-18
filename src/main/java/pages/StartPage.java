@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import pages.Elements.Footer;
 import pages.Elements.Header;
 
 import java.time.Duration;
@@ -15,6 +16,9 @@ import java.time.Duration;
 public class StartPage extends ParentPage {
 
     Header header = new Header(webDriver);
+
+    Footer footer=new Footer(webDriver);
+
     @FindBy(xpath = ".//div[@id='mui_user_login_window']")
     private WebElement registrationForm;
     @FindBy(xpath = ".//div[text()='Або зареєструйтеся']")
@@ -46,6 +50,7 @@ public class StartPage extends ParentPage {
     WebDriverWait webDriverWait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
 
     public StartPage(WebDriver webDriver) {
+
         super(webDriver);
     }
 
@@ -129,8 +134,11 @@ public class StartPage extends ParentPage {
         return this;
     }
 
+    public Footer getFooter() {
+        return footer;
+    }
 
-
-
-
+    public void setFooter(Footer footer) {
+        this.footer = footer;
+    }
 }
