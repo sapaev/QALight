@@ -31,6 +31,7 @@ public class Footer extends CommonActios {
 
 
     public String getLinkForAnotherCountry() {
+
         return linkForAnotherCountry;
     }
 
@@ -39,15 +40,45 @@ public class Footer extends CommonActios {
     }
 
 
-    public StartPage checkLocalisationLink_UK() {
+    public StartPage checkLocalisationLink_UK(String nameOfCountry) {
+        if(nameOfCountry.equalsIgnoreCase("UK")) {
+            elementIsDisplayed(String.format(linkForAnotherCountry, linksProperties.UK()));
+            WebElement linkLocalisation = webDriver.findElement(By.xpath(String.format(linkForAnotherCountry, linksProperties.UK())));
+            Actions actions = new Actions(webDriver);
+            actions.moveToElement(linkLocalisation).build().perform();
+            clickOnElement(linkLocalisation);
+            Assert.assertTrue("Links don`t match", webDriver.getCurrentUrl().contains(linksProperties.UK()));
+        } else if (nameOfCountry.equalsIgnoreCase("UKRAINE")) {
+            elementIsDisplayed(String.format(linkForAnotherCountry, linksProperties.UKRAINE()));
+            WebElement linkLocalisation = webDriver.findElement(By.xpath(String.format(linkForAnotherCountry, linksProperties.UKRAINE())));
+            Actions actions = new Actions(webDriver);
+            actions.moveToElement(linkLocalisation).build().perform();
+            clickOnElement(linkLocalisation);
+            Assert.assertTrue("Links don`t match", webDriver.getCurrentUrl().contains(linksProperties.UKRAINE()));
+        } else if (nameOfCountry.equalsIgnoreCase("USA")) {
+            elementIsDisplayed(String.format(linkForAnotherCountry, linksProperties.USA()));
+            WebElement linkLocalisation = webDriver.findElement(By.xpath(String.format(linkForAnotherCountry, linksProperties.USA())));
+            Actions actions = new Actions(webDriver);
+            actions.moveToElement(linkLocalisation).build().perform();
+            clickOnElement(linkLocalisation);
+            Assert.assertTrue("Links don`t match", webDriver.getCurrentUrl().contains(linksProperties.USA()));
+        } else if (nameOfCountry.equalsIgnoreCase("POLAND")) {
+            elementIsDisplayed(String.format(linkForAnotherCountry, linksProperties.POLAND()));
+            WebElement linkLocalisation = webDriver.findElement(By.xpath(String.format(linkForAnotherCountry, linksProperties.POLAND())));
+            Actions actions = new Actions(webDriver);
+            actions.moveToElement(linkLocalisation).build().perform();
+            clickOnElement(linkLocalisation);
+            Assert.assertTrue("Links don`t match", webDriver.getCurrentUrl().contains(linksProperties.POLAND()));
+        }else if (nameOfCountry.equalsIgnoreCase("KAZAKHSTAN")) {
+            elementIsDisplayed(String.format(linkForAnotherCountry, linksProperties.KAZAKHSTAN()));
+            WebElement linkLocalisation = webDriver.findElement(By.xpath(String.format(linkForAnotherCountry, linksProperties.KAZAKHSTAN())));
+            Actions actions = new Actions(webDriver);
+            actions.moveToElement(linkLocalisation).build().perform();
+            clickOnElement(linkLocalisation);
+            Assert.assertTrue("Links don`t match", webDriver.getCurrentUrl().contains(linksProperties.KAZAKHSTAN()));
+        }
 
-        elementIsDisplayed(String.format(linkForAnotherCountry, linksProperties.UK()));
-        WebElement linkLocalisation = webDriver.findElement(By.xpath(String.format(linkForAnotherCountry, linksProperties.UK())));
-        Actions actions = new Actions(webDriver);
-        actions.moveToElement(linkLocalisation).build().perform();
-        clickOnElement(linkLocalisation);
 
-        Assert.assertTrue("Links don`t match", webDriver.getCurrentUrl().contains(linksProperties.UK()));
         return new StartPage(webDriver);
     }
 
