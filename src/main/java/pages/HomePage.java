@@ -53,7 +53,7 @@ public class HomePage extends ParentPage {
 
     public HomePage closeWelcomePop_up() {
         try {
-            WebDriverWait webDriverWait = new WebDriverWait(webDriver, Duration.ofSeconds(20));
+            WebDriverWait webDriverWait = new WebDriverWait(webDriver, Duration.ofSeconds(10));
             webDriverWait.until(ExpectedConditions.visibilityOf(textInWelcomePop_up));
             clickOnElement(closePop_upButton);
             return this;

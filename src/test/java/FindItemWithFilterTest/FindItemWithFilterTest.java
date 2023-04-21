@@ -33,7 +33,7 @@ public class FindItemWithFilterTest extends BaseTest {
         serchWithFilterPage = homePage.getHeader().clickOnSubcategory(subCategory)
                 .checkIsRedirectToSearchingWithFilterPage()
                 .openAllListOfBrands()
-                .selectCheckBox(countOfSelectedBrandsInFilter);
+                .selectCheckBoxOfBrands(countOfSelectedBrandsInFilter);
         List<String> selectedBrands = serchWithFilterPage.selectedBrandCheckBoxes();
         for (String text : selectedBrands) {
             System.out.println("Выбранные бренды " + text);

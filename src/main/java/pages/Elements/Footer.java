@@ -8,13 +8,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import pages.CommonActios;
 import pages.StartPage;
-
-import java.time.Duration;
 
 
 public class Footer extends CommonActios {
@@ -40,42 +35,49 @@ public class Footer extends CommonActios {
     }
 
 
-    public StartPage checkLocalisationLink_UK(String nameOfCountry) {
+    public StartPage checkLocalisationLink(String nameOfCountry) {
         if(nameOfCountry.equalsIgnoreCase("UK")) {
             elementIsDisplayed(String.format(linkForAnotherCountry, linksProperties.UK()));
             WebElement linkLocalisation = webDriver.findElement(By.xpath(String.format(linkForAnotherCountry, linksProperties.UK())));
             Actions actions = new Actions(webDriver);
             actions.moveToElement(linkLocalisation).build().perform();
             clickOnElement(linkLocalisation);
-            Assert.assertTrue("Links don`t match", webDriver.getCurrentUrl().contains(linksProperties.UK()));
+            Assert.assertTrue("Links don`t match", webDriver
+                    .getCurrentUrl().contains(linksProperties.UK()));
         } else if (nameOfCountry.equalsIgnoreCase("UKRAINE")) {
             elementIsDisplayed(String.format(linkForAnotherCountry, linksProperties.UKRAINE()));
             WebElement linkLocalisation = webDriver.findElement(By.xpath(String.format(linkForAnotherCountry, linksProperties.UKRAINE())));
             Actions actions = new Actions(webDriver);
             actions.moveToElement(linkLocalisation).build().perform();
             clickOnElement(linkLocalisation);
-            Assert.assertTrue("Links don`t match", webDriver.getCurrentUrl().contains(linksProperties.UKRAINE()));
+            Assert.assertTrue("Links don`t match", webDriver
+                    .getCurrentUrl().contains(linksProperties.UKRAINE()));
         } else if (nameOfCountry.equalsIgnoreCase("USA")) {
             elementIsDisplayed(String.format(linkForAnotherCountry, linksProperties.USA()));
             WebElement linkLocalisation = webDriver.findElement(By.xpath(String.format(linkForAnotherCountry, linksProperties.USA())));
             Actions actions = new Actions(webDriver);
             actions.moveToElement(linkLocalisation).build().perform();
             clickOnElement(linkLocalisation);
-            Assert.assertTrue("Links don`t match", webDriver.getCurrentUrl().contains(linksProperties.USA()));
+            Assert.assertTrue("Links don`t match", webDriver
+                    .getCurrentUrl().contains(linksProperties.USA()));
         } else if (nameOfCountry.equalsIgnoreCase("POLAND")) {
             elementIsDisplayed(String.format(linkForAnotherCountry, linksProperties.POLAND()));
-            WebElement linkLocalisation = webDriver.findElement(By.xpath(String.format(linkForAnotherCountry, linksProperties.POLAND())));
+            WebElement linkLocalisation = webDriver
+                    .findElement(By.xpath(String.format(linkForAnotherCountry, linksProperties.POLAND())));
             Actions actions = new Actions(webDriver);
             actions.moveToElement(linkLocalisation).build().perform();
             clickOnElement(linkLocalisation);
-            Assert.assertTrue("Links don`t match", webDriver.getCurrentUrl().contains(linksProperties.POLAND()));
+            Assert.assertTrue("Links don`t match", webDriver
+                    .getCurrentUrl().contains(linksProperties.POLAND()));
         }else if (nameOfCountry.equalsIgnoreCase("KAZAKHSTAN")) {
             elementIsDisplayed(String.format(linkForAnotherCountry, linksProperties.KAZAKHSTAN()));
-            WebElement linkLocalisation = webDriver.findElement(By.xpath(String.format(linkForAnotherCountry, linksProperties.KAZAKHSTAN())));
+            WebElement linkLocalisation = webDriver
+                    .findElement(By.xpath(String.format(linkForAnotherCountry, linksProperties.KAZAKHSTAN())));
             Actions actions = new Actions(webDriver);
             actions.moveToElement(linkLocalisation).build().perform();
             clickOnElement(linkLocalisation);
-            Assert.assertTrue("Links don`t match", webDriver.getCurrentUrl().contains(linksProperties.KAZAKHSTAN()));
+            Assert.assertTrue("Links don`t match", webDriver
+                    .getCurrentUrl().contains(linksProperties.KAZAKHSTAN()));
         }
 
 

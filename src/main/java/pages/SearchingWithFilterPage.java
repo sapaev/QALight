@@ -79,7 +79,7 @@ public class SearchingWithFilterPage extends ParentPage {
         return element;
     }
 
-    public SearchingWithFilterPage selectCheckBox(int countOfSelectedBrands) {
+    public SearchingWithFilterPage selectCheckBoxOfBrands(int countOfSelectedBrands) {
 
         for (int i = 0, j = 0; i < listOfBrandCheckboxes.size(); i++) {
             elementIsDisplayed(listOfBrandCheckboxes.get(i));

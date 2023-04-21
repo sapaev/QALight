@@ -7,7 +7,10 @@
     <list default="true" id="46e0ea29-ec2e-442c-b044-529260152f31" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/Elements/Footer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Elements/Footer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchingWithFilterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchingWithFilterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/StartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FindItemWithFilterTest/FindItemWithFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindItemWithFilterTest/FindItemWithFilterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/checkLocalizationLink/LocalizationLinkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/checkLocalizationLink/LocalizationLinkTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +66,7 @@
       <recent name="C:\Users\qasap\QALight\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LocalizationLinkTest">
+  <component name="RunManager" selected="JUnit.SearchItemWithSearchFieldTest">
     <configuration name="LocalizationLinkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
@@ -127,7 +130,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchItemWithSearchFieldTest.searchItemWithValidValueWithTypeOfItemAndBrand" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchItemWithSearchFieldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
         <pattern>
@@ -137,8 +140,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="SearchItemWithSearchField" />
       <option name="MAIN_CLASS_NAME" value="SearchItemWithSearchField.SearchItemWithSearchFieldTest" />
-      <option name="METHOD_NAME" value="searchItemWithValidValueWithTypeOfItemAndBrand" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,15 +150,15 @@
       <item itemvalue="JUnit.LocalizationLinkTest" />
       <item itemvalue="JUnit.LocalizationLinkTest.checkLocalizationLink" />
       <item itemvalue="JUnit.LocalizationLinkTest.openStartPage_UkraineLocalisation" />
-      <item itemvalue="JUnit.SearchItemWithSearchFieldTest.searchItemWithValidValueWithTypeOfItemAndBrand" />
+      <item itemvalue="JUnit.SearchItemWithSearchFieldTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SearchItemWithSearchFieldTest" />
         <item itemvalue="JUnit.LocalizationLinkTest" />
         <item itemvalue="JUnit.LocalizationLinkTest.checkLocalizationLink_UK" />
         <item itemvalue="JUnit.LocalizationLinkTest.checkLocalizationLink" />
         <item itemvalue="JUnit.LocalizationLinkTest.openStartPage_UkraineLocalisation" />
-        <item itemvalue="JUnit.SearchItemWithSearchFieldTest.searchItemWithValidValueWithTypeOfItemAndBrand" />
       </list>
     </recent_temporary>
   </component>
@@ -246,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681833363200</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Дипломный проект">
+      <created>1682009432685</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682009432685</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

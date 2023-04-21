@@ -31,31 +31,31 @@ public class LocalizationLinkTest extends BaseTest {
     @Test
     public void checkLocalizationLink_UK(){
         startPage.getFooter()
-                .checkLocalisationLink_UK(nameOfUK);
+                .checkLocalisationLink(nameOfUK);
     }
 
     @Test
     public void checkLocalizationLink_UKRAINE(){
         startPage.getFooter()
-                .checkLocalisationLink_UK(nameOfUKRAINE);
+                .checkLocalisationLink(nameOfUKRAINE);
     }
 
     @Test
     public void checkLocalizationLink_USA(){
         startPage.getFooter()
-                .checkLocalisationLink_UK(nameOfUSA);
+                .checkLocalisationLink(nameOfUSA);
     }
 
     @Test
     public void checkLocalizationLink_POLAND(){
         startPage.getFooter()
-                .checkLocalisationLink_UK(nameOfPOLAND);
+                .checkLocalisationLink(nameOfPOLAND);
     }
 
     @Test
     public void checkLocalizationLink_KAZAKHSTAN(){
         startPage.getFooter()
-                .checkLocalisationLink_UK(nameOfKAZAKHSTAN);
+                .checkLocalisationLink(nameOfKAZAKHSTAN);
     }
 
 
@@ -64,7 +64,7 @@ public class LocalizationLinkTest extends BaseTest {
     @Test
     public void checkLocalizationLink(String nameOfCountry){
         startPage.getFooter()
-                .checkLocalisationLink_UK(nameOfCountry);
+                .checkLocalisationLink(nameOfCountry);
     }
 
     public static Object[][] provideParameters() {

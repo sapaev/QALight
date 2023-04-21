@@ -65,18 +65,22 @@ public class StartPage extends ParentPage {
     }
 
     public void enterUserNameForRegistration(String name) {
+
         enterTextInField(nameField, name);
     }
 
     public void enterEmailForRegistration(String email) {
+
         enterTextInField(emailField, email);
     }
 
     public void enterPasswordForRegistration(String password) {
+
         enterTextInField(passwordField, password);
     }
 
     public void clickOnPrivacyPolicyCheckBoxForRegistration() {
+
         clickOnCheckBoxEnable(privacyPolicyCheckBox);
     }
 
@@ -105,6 +109,7 @@ public class StartPage extends ParentPage {
 
 
     public void enterEmailForLogin(String email) {
+
         enterTextInField(nameFieldForLogin, email);
     }
 
