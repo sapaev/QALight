@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e0ea29-ec2e-442c-b044-529260152f31" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/RegistrationTest/RegistrationErrorText.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/Elements/Footer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Elements/Footer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchingWithFilterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchingWithFilterPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/StartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FindItemWithFilterTest/FindItemWithFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindItemWithFilterTest/FindItemWithFilterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/checkLocalizationLink/LocalizationLinkTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/checkLocalizationLink/LocalizationLinkTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +62,7 @@
       <recent name="C:\Users\qasap\QALight\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SearchItemWithSearchFieldTest">
+  <component name="RunManager" selected="JUnit.RegistrationErrorText">
     <configuration name="LocalizationLinkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
@@ -114,18 +110,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocalizationLinkTest.openStartPage_UkraineLocalisation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RegistrationErrorText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="checkLocalizationLink.*" />
+          <option name="PATTERN" value="RegistrationTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="checkLocalizationLink" />
-      <option name="MAIN_CLASS_NAME" value="checkLocalizationLink.LocalizationLinkTest" />
-      <option name="METHOD_NAME" value="openStartPage_UkraineLocalisation" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="RegistrationTest" />
+      <option name="MAIN_CLASS_NAME" value="RegistrationTest.RegistrationErrorText" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,19 +141,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.RegistrationErrorText" />
       <item itemvalue="JUnit.LocalizationLinkTest.checkLocalizationLink_UK" />
       <item itemvalue="JUnit.LocalizationLinkTest" />
       <item itemvalue="JUnit.LocalizationLinkTest.checkLocalizationLink" />
-      <item itemvalue="JUnit.LocalizationLinkTest.openStartPage_UkraineLocalisation" />
       <item itemvalue="JUnit.SearchItemWithSearchFieldTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RegistrationErrorText" />
         <item itemvalue="JUnit.SearchItemWithSearchFieldTest" />
         <item itemvalue="JUnit.LocalizationLinkTest" />
         <item itemvalue="JUnit.LocalizationLinkTest.checkLocalizationLink_UK" />
         <item itemvalue="JUnit.LocalizationLinkTest.checkLocalizationLink" />
-        <item itemvalue="JUnit.LocalizationLinkTest.openStartPage_UkraineLocalisation" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682009432685</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Дипломный проект">
+      <created>1682060749981</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682060749981</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
