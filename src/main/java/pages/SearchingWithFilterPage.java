@@ -37,7 +37,7 @@ public class SearchingWithFilterPage extends ParentPage {
     @FindBy(xpath = "//input[@id=\"match_submit\" and @class=\"submit-button\"]")
     private WebElement searchButton;
 
-    @FindBy(xpath = "//a[@href='#']/span[text()='Питання і побажання по підбору (пошуку) товару']")
+    @FindBy(xpath = "//a[@href='#']/span[text()='Запитання і побажання по підбору (пошуку) товару']")
     private WebElement answerForSearchingLink;
 
     @FindBy(xpath = "//span[text()='Рейтинг брендів']")

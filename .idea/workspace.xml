@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e0ea29-ec2e-442c-b044-529260152f31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/RegistrationTest/RegistrationErrorText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/RegressionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/StartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchingWithFilterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchingWithFilterPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +62,23 @@
       <recent name="C:\Users\qasap\QALight\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RegistrationErrorText">
+  <component name="RunManager" selected="JUnit.FindItemWithFilterTest.searchItemWithFilter">
+    <configuration name="FindItemWithFilterTest.searchItemWithFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QALight" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="FindItemWithFilterTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="FindItemWithFilterTest" />
+      <option name="MAIN_CLASS_NAME" value="FindItemWithFilterTest.FindItemWithFilterTest" />
+      <option name="METHOD_NAME" value="searchItemWithFilter" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LocalizationLinkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
@@ -78,38 +94,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocalizationLinkTest.checkLocalizationLink" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="QALight" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="checkLocalizationLink.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="checkLocalizationLink" />
-      <option name="MAIN_CLASS_NAME" value="checkLocalizationLink.LocalizationLinkTest" />
-      <option name="METHOD_NAME" value="checkLocalizationLink" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LocalizationLinkTest.checkLocalizationLink_UK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="QALight" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="checkLocalizationLink.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="checkLocalizationLink" />
-      <option name="MAIN_CLASS_NAME" value="checkLocalizationLink.LocalizationLinkTest" />
-      <option name="METHOD_NAME" value="checkLocalizationLink_UK" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RegistrationErrorText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
@@ -120,6 +104,21 @@
       </extension>
       <option name="PACKAGE_NAME" value="RegistrationTest" />
       <option name="MAIN_CLASS_NAME" value="RegistrationTest.RegistrationErrorText" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegressionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QALight" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="RegressionTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="RegressionTest" />
+      <option name="MAIN_CLASS_NAME" value="RegressionTest.RegressionTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,19 +140,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.FindItemWithFilterTest.searchItemWithFilter" />
+      <item itemvalue="JUnit.RegressionTest" />
       <item itemvalue="JUnit.RegistrationErrorText" />
-      <item itemvalue="JUnit.LocalizationLinkTest.checkLocalizationLink_UK" />
       <item itemvalue="JUnit.LocalizationLinkTest" />
-      <item itemvalue="JUnit.LocalizationLinkTest.checkLocalizationLink" />
       <item itemvalue="JUnit.SearchItemWithSearchFieldTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FindItemWithFilterTest.searchItemWithFilter" />
+        <item itemvalue="JUnit.RegressionTest" />
         <item itemvalue="JUnit.RegistrationErrorText" />
         <item itemvalue="JUnit.SearchItemWithSearchFieldTest" />
         <item itemvalue="JUnit.LocalizationLinkTest" />
-        <item itemvalue="JUnit.LocalizationLinkTest.checkLocalizationLink_UK" />
-        <item itemvalue="JUnit.LocalizationLinkTest.checkLocalizationLink" />
       </list>
     </recent_temporary>
   </component>
@@ -257,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682060749981</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Дипломный проект">
+      <created>1682202888091</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1682202888091</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
