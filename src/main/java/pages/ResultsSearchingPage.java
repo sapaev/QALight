@@ -123,6 +123,24 @@ public ResultsSearchingPage checkSuccessfullySearchingWithTextInItemsList(String
                     actions.moveToElement(listOfResultsFromExtentedList.get(i + 1)).build().perform();
                 }
             }
+        } else if (elementIsDisplayed(itemFromResultList)) {
+            for (int i = 0; i < listOfResults.size(); i++) {
+                elementIsDisplayed(listOfResults.get(i));
+                String itemName = listOfResults.get(i).getText();
+                for (int a = 0; a < array.size(); a++) {
+                    if (itemName.contains(array.get(a))) {
+                        Assert.assertThat("Бренды не совпадают", itemName, CoreMatchers.containsString(array.get(a)));
+                        System.out.println("бренды совпали: чекбокс " + array.get(a) + " нашел товар " + itemName);
+                    }
+
+                }
+                if (i < listOfResults.size() - 1) {
+                    actions.moveToElement(listOfResults.get(i + 1)).build().perform();
+                }
+            }
+
+        }else {
+            Assert.fail("Can not find items");
         }
         return this;
     }

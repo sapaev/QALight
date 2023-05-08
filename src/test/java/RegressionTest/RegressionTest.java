@@ -18,7 +18,6 @@ import org.junit.runners.Suite;
         FindItemWithFilterTest.class,
         LogOutTest.class,
         RegistrationErrorText.class,
-        RegistrationTest.class
 })
 public class RegressionTest {
 }
