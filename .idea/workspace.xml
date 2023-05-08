@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e0ea29-ec2e-442c-b044-529260152f31" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/LoginTest/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ResultsSearchingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ResultsSearchingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/StartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/StartPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FindItemWithFilterTest/FindItemWithFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindItemWithFilterTest/FindItemWithFilterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/RegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/RegressionTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +63,7 @@
       <recent name="C:\Users\qasap\QALight\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FindItemWithFilterTest.searchItemWithFilter">
+  <component name="RunManager" selected="JUnit.LoginTest.checkAutorizationErrors">
     <configuration name="FindItemWithFilterTest.searchItemWithFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
@@ -81,17 +80,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LocalizationLinkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.checkAutorizationErrors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="checkLocalizationLink.*" />
+          <option name="PATTERN" value="LoginTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="checkLocalizationLink" />
-      <option name="MAIN_CLASS_NAME" value="checkLocalizationLink.LocalizationLinkTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="LoginTest" />
+      <option name="MAIN_CLASS_NAME" value="LoginTest.LoginTest" />
+      <option name="METHOD_NAME" value="checkAutorizationErrors" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -142,19 +142,19 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.LoginTest.checkAutorizationErrors" />
       <item itemvalue="JUnit.FindItemWithFilterTest.searchItemWithFilter" />
       <item itemvalue="JUnit.RegressionTest" />
       <item itemvalue="JUnit.RegistrationErrorText" />
-      <item itemvalue="JUnit.LocalizationLinkTest" />
       <item itemvalue="JUnit.SearchItemWithSearchFieldTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FindItemWithFilterTest.searchItemWithFilter" />
+        <item itemvalue="JUnit.LoginTest.checkAutorizationErrors" />
         <item itemvalue="JUnit.RegressionTest" />
+        <item itemvalue="JUnit.FindItemWithFilterTest.searchItemWithFilter" />
         <item itemvalue="JUnit.RegistrationErrorText" />
         <item itemvalue="JUnit.SearchItemWithSearchFieldTest" />
-        <item itemvalue="JUnit.LocalizationLinkTest" />
       </list>
     </recent_temporary>
   </component>
@@ -272,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683453588895</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Дипломный проект">
+      <created>1683531876277</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1683531876277</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

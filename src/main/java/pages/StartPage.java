@@ -1,6 +1,5 @@
 package pages;
 
-import libs.Creds;
 import org.assertj.core.api.SoftAssertions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -72,6 +71,7 @@ public class StartPage extends ParentPage {
     private String errorsForRegistr="//div[@class='ek-form-text']";
     @FindBy(xpath = "//div[@class='ek-form-text']")
     private List<WebElement> listOfErrors;
+
 
     public StartPage(WebDriver webDriver) {
 
@@ -158,6 +158,11 @@ public class StartPage extends ParentPage {
     }
 
 
+    public void clickOnSubmitLoginButtonWithNotValidCredential() {
+        clickOnElement(submitLoginButton);
+    }
+
+
     public StartPage checkIsRedirectOnStartPage(){
        Assert.assertTrue(elementIsDisplayed(header.getLoginButton()));
         return this;
@@ -184,7 +189,33 @@ public class StartPage extends ParentPage {
 
         ArrayList<String> actualTextFromErrors=new ArrayList<>();
 
-        for (WebElement element:listOfErrors){
+        for (WebElement element: listOfErrors){
+            actualTextFromErrors.add(element.getText());
+        }
+
+        SoftAssertions softAssertions=new SoftAssertions();
+        for (int i=0; i<expectedErrorsArray.length; i++){
+            softAssertions.assertThat(expectedErrorsArray[i]).as("Message is not equals").isIn(actualTextFromErrors);
+        }
+        softAssertions.assertAll();
+        return this;
+    }
+
+
+
+    public StartPage checkErrorsMessagesForLogin(String expectedErrors) throws InterruptedException {
+        String[] expectedErrorsArray=expectedErrors.split(",");
+        webDriverWait15.withMessage("Namber messages should be"+expectedErrorsArray.length)
+                .until(ExpectedConditions.numberOfElementsToBe(By.xpath(errorsForRegistr),expectedErrorsArray.length));
+
+        Thread.sleep(1000);
+
+        Assert.assertEquals("Number or messages", expectedErrorsArray.length, listOfErrors.size());
+
+
+        ArrayList<String> actualTextFromErrors=new ArrayList<>();
+
+        for (WebElement element: listOfErrors){
             actualTextFromErrors.add(element.getText());
         }
 

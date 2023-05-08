@@ -28,7 +28,7 @@ public class FindItemWithFilterTest extends BaseTest {
 
 
     @Test
-    public void searchItemWithFilter() {
+    public void searchItemWithFilterBrand() {
         homePage.getHeader().hoverToTab("Гаджети");
         serchWithFilterPage = homePage.getHeader().clickOnSubcategory("Смартфони")
                 .checkIsRedirectToSearchingWithFilterPage()
@@ -41,7 +41,6 @@ public class FindItemWithFilterTest extends BaseTest {
         serchWithFilterPage.clickOnSearchButton()
                 .checkIsRedirectOnResultsSearchingPage()
                 .checkSuccessfullySearchingWithFilterInItemsList(selectedBrands);
-
 
     }
 

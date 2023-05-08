@@ -54,16 +54,4 @@ public class SearchItemWithSearchFieldTest extends BaseTest {
     }
 
 
-    @Test
-    public void openCardOfItem() throws InterruptedException {
-            homePage.inputNameItemInSeachField(nameItem)
-                    .clickOnstartSearchingButton()
-                    .checkIsRedirectOnResultsSearchingPage()
-                    .checkSuccessfullySearchingWithTextInItemsList("Samsung")
-                    .openItemCard(nameItem)
-                    .checkIsRedirectOnItemCardPage()
-            ;
-
-    }
-
 }
