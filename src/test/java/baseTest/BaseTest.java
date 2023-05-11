@@ -14,6 +14,7 @@ import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import pages.HomePage;
+import pages.ItemCardPage;
 import pages.StartPage;
 
 
@@ -22,9 +23,13 @@ import java.time.Duration;
 
 public class BaseTest {
     protected WebDriver webDriver;
+
+
     Logger logger = Logger.getLogger(getClass());
     protected StartPage startPage;
     protected HomePage homePage;
+
+    protected ItemCardPage itemCardPage;
 
 
 
@@ -40,6 +45,7 @@ public class BaseTest {
         webDriver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         startPage = new StartPage(webDriver);
         homePage=new HomePage(webDriver);
+        itemCardPage=new ItemCardPage(webDriver);
 
 
     }
@@ -69,13 +75,13 @@ public class BaseTest {
            return webDriver;
     }
 
-/*
+
     @After
     public void tearDown() {
     logger.info("----------"+testName.getMethodName()+" was ended----------");
     webDriver.quit();
     logger.info("Browser was closed");
     }
-*/
+
 }
 

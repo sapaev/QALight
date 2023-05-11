@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e0ea29-ec2e-442c-b044-529260152f31" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SellerAnotherPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RegressionTest/RegressionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegressionTest/RegressionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ItemCardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ItemCardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchingWithFilterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchingWithFilterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CheckOfItemCounterInItemHistoryTest/CheckOfItemCounterInItemHistoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CheckOfItemCounterInItemHistoryTest/CheckOfItemCounterInItemHistoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ItemPageTest/ItemPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ItemPageTest/ItemPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,50 +67,66 @@
       <recent name="C:\Users\qasap\QALight\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LoginTest.checkAutorizationErrors">
-    <configuration name="FindItemWithFilterTest.searchItemWithFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Maven.RegressionAllTests">
+    <configuration name="CheckOfItemCounterInItemHistoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FindItemWithFilterTest.*" />
+          <option name="PATTERN" value="CheckOfItemCounterInItemHistoryTest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="FindItemWithFilterTest" />
-      <option name="MAIN_CLASS_NAME" value="FindItemWithFilterTest.FindItemWithFilterTest" />
-      <option name="METHOD_NAME" value="searchItemWithFilter" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.checkAutorizationErrors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="QALight" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="LoginTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="LoginTest" />
-      <option name="MAIN_CLASS_NAME" value="LoginTest.LoginTest" />
-      <option name="METHOD_NAME" value="checkAutorizationErrors" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RegistrationErrorText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="QALight" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="RegistrationTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="RegistrationTest" />
-      <option name="MAIN_CLASS_NAME" value="RegistrationTest.RegistrationErrorText" />
+      <option name="PACKAGE_NAME" value="CheckOfItemCounterInItemHistoryTest" />
+      <option name="MAIN_CLASS_NAME" value="CheckOfItemCounterInItemHistoryTest.CheckOfItemCounterInItemHistoryTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QALight" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ItemPageTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ItemPageTest" />
+      <option name="MAIN_CLASS_NAME" value="ItemPageTest.ItemPageTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemPageTest.checkOpeningCopiedLinkOfItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QALight" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ItemPageTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ItemPageTest" />
+      <option name="MAIN_CLASS_NAME" value="ItemPageTest.ItemPageTest" />
+      <option name="METHOD_NAME" value="checkOpeningCopiedLinkOfItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemPageTest.openCardOfItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="QALight" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ItemPageTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ItemPageTest" />
+      <option name="MAIN_CLASS_NAME" value="ItemPageTest.ItemPageTest" />
+      <option name="METHOD_NAME" value="openCardOfItem" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,35 +146,66 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchItemWithSearchFieldTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="QALight" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SearchItemWithSearchField.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="SearchItemWithSearchField" />
-      <option name="MAIN_CLASS_NAME" value="SearchItemWithSearchField.SearchItemWithSearchFieldTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="RegressionAllTests" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings">
+          <MavenRunnerSettings>
+            <option name="delegateBuildToMaven" value="false" />
+            <option name="environmentProperties">
+              <map />
+            </option>
+            <option name="jreName" value="azul-15" />
+            <option name="mavenProperties">
+              <map />
+            </option>
+            <option name="passParentEnv" value="true" />
+            <option name="runMavenInBackground" value="true" />
+            <option name="skipTests" value="false" />
+            <option name="vmOptions" value="" />
+          </MavenRunnerSettings>
+        </option>
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="clean" />
+                <option value="test" />
+                <option value="-Dtest=RegressionTest" />
+                <option value="-Dmaven.test.failure.ignore=true" />
+                <option value="allure:report" />
+                <option value="-Dprofile=regularTests" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.LoginTest.checkAutorizationErrors" />
-      <item itemvalue="JUnit.FindItemWithFilterTest.searchItemWithFilter" />
+      <item itemvalue="JUnit.CheckOfItemCounterInItemHistoryTest" />
+      <item itemvalue="JUnit.ItemPageTest.openCardOfItem" />
+      <item itemvalue="JUnit.ItemPageTest" />
+      <item itemvalue="JUnit.ItemPageTest.checkOpeningCopiedLinkOfItem" />
       <item itemvalue="JUnit.RegressionTest" />
-      <item itemvalue="JUnit.RegistrationErrorText" />
-      <item itemvalue="JUnit.SearchItemWithSearchFieldTest" />
+      <item itemvalue="Maven.RegressionAllTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LoginTest.checkAutorizationErrors" />
         <item itemvalue="JUnit.RegressionTest" />
-        <item itemvalue="JUnit.FindItemWithFilterTest.searchItemWithFilter" />
-        <item itemvalue="JUnit.RegistrationErrorText" />
-        <item itemvalue="JUnit.SearchItemWithSearchFieldTest" />
+        <item itemvalue="JUnit.ItemPageTest" />
+        <item itemvalue="JUnit.ItemPageTest.checkOpeningCopiedLinkOfItem" />
+        <item itemvalue="JUnit.ItemPageTest.openCardOfItem" />
+        <item itemvalue="JUnit.CheckOfItemCounterInItemHistoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -284,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683555777813</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Дипломный проект">
+      <created>1683559229065</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1683559229065</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -48,6 +48,23 @@ public class SearchingWithFilterPage extends ParentPage {
     @FindBy(xpath = "//div[@class=\"all-link\"]/a")
     private WebElement showAllItemsButton;
 
+
+
+
+    @FindBy(xpath = "//div[@class='model-short-div list-item--goods-group ms-grp ']")
+    private WebElement extentedlistOfResults;
+    @FindBy(xpath = "//span[@class='u']")
+    private List<WebElement> listOfResultsFromExtentedList;
+
+
+
+    @FindBy(xpath = "//div[@class='model-short-div list-item--goods   ']")
+    private WebElement itemFromResultList;
+    @FindBy(xpath = "//a[@class='model-short-title no-u']")
+    private List<WebElement> listOfResults;
+
+
+
     Actions actions = new Actions(webDriver);
 
     public SearchingWithFilterPage(WebDriver webDriver) {
@@ -129,10 +146,32 @@ public class SearchingWithFilterPage extends ParentPage {
         return selectedBrand;
     }
 
-
+/*
     public ResultsSearchingPage clickOnShowAllItemsButton() {
        elementIsDisplayed(showAllItemsButton);
        clickOnElement(showAllItemsButton);
        return new ResultsSearchingPage(webDriver);
     }
+
+*/
+
+    public ItemCardPage openTheFirstItemOfList(){
+        if(elementIsDisplayed(extentedlistOfResults)){
+            for (WebElement element:listOfResultsFromExtentedList){
+                elementIsDisplayed(element);
+                clickOnElement(element);
+                break;
+            }
+        } else if (elementIsDisplayed(itemFromResultList)){
+            for (WebElement element:listOfResults){
+                elementIsDisplayed(element);
+                clickOnElement(element);
+                break;
+            }
+        }
+        return new ItemCardPage(webDriver);
+    }
+
+
+
 }

@@ -3,6 +3,7 @@ package CheckOfItemCounterInItemHistoryTest;
 import baseTest.BaseTest;
 import libs.Creds;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import pages.ItemCardPage;
@@ -36,13 +37,13 @@ public class CheckOfItemCounterInItemHistoryTest extends BaseTest {
         int valueBeforeTesting=homePage.openMyProfilePage().checkIsSizeOfHistoryItem();
         int valueAfterTesting=homePage.getHeader().hoverToTab(nameOfTab).clickOnSubcategory(subCategory1)
                 .checkIsRedirectToSearchingWithFilterPage()
-                .clickOnShowAllItemsButton()
-                .checkIsRedirectOnResultsSearchingPage()
+         //     .clickOnShowAllItemsButton()
+         //     .checkIsRedirectOnResultsSearchingPage()
                 .openTheFirstItemOfList()
                 .checkIsRedirectOnItemCardPage()
                 .redirectOnMyProfilePageFromItemCardPage()
                 .checkIsSizeOfHistoryItem();
-       // Assert.assertTrue("", valueAfterTesting-valueBeforeTesting==1);
+       Assert.assertTrue("", valueAfterTesting-valueBeforeTesting==1);
         System.out.println(valueBeforeTesting);
         System.out.println(valueAfterTesting);
 

@@ -292,7 +292,7 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-            <plugin>
+<!--            <plugin>
                 <groupId>com.github.temyers</groupId>
                 <artifactId>cucumber-jvm-parallel-plugin</artifactId>
                 <version>2.2.0</version>
@@ -313,12 +313,12 @@
                             <cucumberOutputDir>target/cucumber-parallel</cucumberOutputDir>
                             <format>json,html</format>
                             <tags>"${tag}"</tags>
-                            <!--<parallelScheme>SCENARIO</parallelScheme>-->
+                            &lt;!&ndash;<parallelScheme>SCENARIO</parallelScheme>&ndash;&gt;
                             <parallelScheme>FEATURE</parallelScheme>
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>-->
         </plugins>
         <resources>
             <resource>

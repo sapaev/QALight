@@ -1,11 +1,18 @@
 package pages;
 
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import pages.Elements.Header;
 import pages.ParentPage;
+
+import java.awt.*;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.Transferable;
 
 public class ItemCardPage extends ParentPage {
 
@@ -18,6 +25,13 @@ public class ItemCardPage extends ParentPage {
 
     @FindBy(xpath ="//div[@class='goto-price-charts']")
     private WebElement priceChartsButton;
+
+
+    @FindBy(xpath = "//div[@class='share-btn']")
+    private WebElement shareButton;
+
+    @FindBy(xpath = "//div[@class='share__link__input-wrap']/button[@type='button']")
+    private WebElement copyLinkOfPageButton;
 
     public ItemCardPage(WebDriver webDriver) {
         super(webDriver);
@@ -35,6 +49,46 @@ public class ItemCardPage extends ParentPage {
         clickOnElement(header.getProfileButton());
         return new MyProfile(webDriver);
     }
+
+
+    public String copyUrlOfItemPage(){
+        elementIsDisplayed(shareButton);
+        clickOnElement(shareButton);
+
+        webDriverWait10.until(ExpectedConditions.elementToBeClickable(copyLinkOfPageButton));
+        clickOnElement(copyLinkOfPageButton);
+
+
+        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+
+        // Получаем содержимое буфера обмена в виде объекта Transferable
+        Transferable contents = clipboard.getContents(null);
+
+        String text = "";
+
+        // Проверяем, поддерживает ли буфер обмена формат строки
+        if (contents.isDataFlavorSupported(DataFlavor.stringFlavor)) {
+            try {
+                // Получаем содержимое буфера обмена в виде строки
+                 text = (String) contents.getTransferData(DataFlavor.stringFlavor);
+                System.out.println("Скопированный текст: " + text);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        return text;
+    }
+
+
+    public void openCopiedLink(String copiedURL){
+        webDriver.get(copiedURL);
+    }
+
+
+
+
+
 
 
 }
