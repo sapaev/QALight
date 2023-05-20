@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e0ea29-ec2e-442c-b044-529260152f31" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SellerAnotherPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ItemCardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ItemCardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchingWithFilterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchingWithFilterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/CheckOfItemCounterInItemHistoryTest/CheckOfItemCounterInItemHistoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CheckOfItemCounterInItemHistoryTest/CheckOfItemCounterInItemHistoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ItemPageTest/ItemPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ItemPageTest/ItemPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +61,8 @@
       <recent name="C:\Users\qasap\QALight\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.RegressionAllTests">
-    <configuration name="CheckOfItemCounterInItemHistoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.CheckOfItemCounterInItemHistoryTest.testOfCounter">
+    <configuration name="CheckOfItemCounterInItemHistoryTest.testOfCounter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
         <pattern>
@@ -78,7 +72,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="CheckOfItemCounterInItemHistoryTest" />
       <option name="MAIN_CLASS_NAME" value="CheckOfItemCounterInItemHistoryTest.CheckOfItemCounterInItemHistoryTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="testOfCounter" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -192,20 +187,20 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="JUnit.CheckOfItemCounterInItemHistoryTest" />
-      <item itemvalue="JUnit.ItemPageTest.openCardOfItem" />
+      <item itemvalue="JUnit.CheckOfItemCounterInItemHistoryTest.testOfCounter" />
       <item itemvalue="JUnit.ItemPageTest" />
       <item itemvalue="JUnit.ItemPageTest.checkOpeningCopiedLinkOfItem" />
+      <item itemvalue="JUnit.ItemPageTest.openCardOfItem" />
       <item itemvalue="JUnit.RegressionTest" />
       <item itemvalue="Maven.RegressionAllTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CheckOfItemCounterInItemHistoryTest.testOfCounter" />
+        <item itemvalue="JUnit.ItemPageTest.openCardOfItem" />
         <item itemvalue="JUnit.RegressionTest" />
         <item itemvalue="JUnit.ItemPageTest" />
         <item itemvalue="JUnit.ItemPageTest.checkOpeningCopiedLinkOfItem" />
-        <item itemvalue="JUnit.ItemPageTest.openCardOfItem" />
-        <item itemvalue="JUnit.CheckOfItemCounterInItemHistoryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -344,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683559229065</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Дипломный проект">
+      <created>1683796848100</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1683796848100</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

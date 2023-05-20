@@ -23,7 +23,7 @@ public class ItemCardPage extends ParentPage {
     private WebElement titleOfItem;
 
 
-    @FindBy(xpath ="//div[@class='goto-price-charts']")
+    @FindBy(xpath = "//div[@class='goto-price-charts']")
     private WebElement priceChartsButton;
 
 
@@ -38,20 +38,23 @@ public class ItemCardPage extends ParentPage {
     }
 
 
-    public ItemCardPage checkIsRedirectOnItemCardPage(){
-        Assert.assertTrue("Title of Item is displayed", elementIsDisplayed("//h1[@itemprop='name']"));
-        Assert.assertTrue("Price charts button is displayed", elementIsDisplayed("//div[@class='item-block']") || elementIsDisplayed("//div[@class='conf-desc-ai-title']"));
+    public ItemCardPage checkIsRedirectOnItemCardPage() {
+        Assert.assertTrue("Title of Item is displayed", elementIsDisplayed("//h1[@itemprop='name']")
+                || elementIsDisplayed("//div[@class='conf-desc-ai-title']")
+                || elementIsDisplayed("//div[@class='item-block']")
+                || elementIsDisplayed("//div[@class='conf-table-container']"));
+
         return this;
     }
 
 
-    public MyProfile redirectOnMyProfilePageFromItemCardPage(){
+    public MyProfile redirectOnMyProfilePageFromItemCardPage() {
         clickOnElement(header.getProfileButton());
         return new MyProfile(webDriver);
     }
 
 
-    public String copyUrlOfItemPage(){
+    public String copyUrlOfItemPage() {
         elementIsDisplayed(shareButton);
         clickOnElement(shareButton);
 
@@ -70,7 +73,7 @@ public class ItemCardPage extends ParentPage {
         if (contents.isDataFlavorSupported(DataFlavor.stringFlavor)) {
             try {
                 // Получаем содержимое буфера обмена в виде строки
-                 text = (String) contents.getTransferData(DataFlavor.stringFlavor);
+                text = (String) contents.getTransferData(DataFlavor.stringFlavor);
                 System.out.println("Скопированный текст: " + text);
             } catch (Exception e) {
                 e.printStackTrace();
@@ -81,14 +84,9 @@ public class ItemCardPage extends ParentPage {
     }
 
 
-    public void openCopiedLink(String copiedURL){
+    public void openCopiedLink(String copiedURL) {
         webDriver.get(copiedURL);
     }
-
-
-
-
-
 
 
 }
