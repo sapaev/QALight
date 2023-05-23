@@ -6,6 +6,8 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.List;
+
 
 public class ItemPageTest extends BaseTest {
 
@@ -87,7 +89,34 @@ public class ItemPageTest extends BaseTest {
         }
         return webDriver;
     }
-
-
  */
+
+
+
+    @Test
+    public void checkComparableBar() throws InterruptedException {
+        itemCardPage=homePage.inputNameItemInSeachField(nameItem)
+                .clickOnstartSearchingButton()
+                .checkIsRedirectOnResultsSearchingPage()
+                .checkSuccessfullySearchingWithTextInItemsList("Samsung")
+                .openItemCard(nameItem)
+                .checkIsRedirectOnItemCardPage()
+                .addToComparableList()
+        ;
+
+        String code=itemCardPage.getCodeOfItem();
+        System.out.println("----------------------------------------------------------------------------------------");
+        System.out.println("code of item= "+code);
+
+        System.out.println("----------------------------------------------------------------------------------------");
+
+        List<String> nameOfItemsInComparableBar=itemCardPage.getBottomBar().getListOflistOfComparedItems();
+
+        for (String a:nameOfItemsInComparableBar){
+            System.out.println(a);
+        }
+
+
+
+    }
 }

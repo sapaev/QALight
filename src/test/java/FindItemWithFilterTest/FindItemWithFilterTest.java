@@ -26,7 +26,6 @@ public class FindItemWithFilterTest extends BaseTest {
                 .checkIsRedirectOnHomePage();
     }
 
-
     @Test
     public void searchItemWithFilterBrand() {
         homePage.getHeader().hoverToTab("Гаджети");

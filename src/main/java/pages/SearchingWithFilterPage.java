@@ -10,45 +10,29 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.ArrayList;
 import java.util.List;
-
 public class SearchingWithFilterPage extends ParentPage {
-
 
     @FindBy(xpath = "//div[@class='rm-div div-match-form open']")
     private WebElement filtersForm;
-
     @FindBy(xpath = "//input[@id='match_submit']")
     private WebElement submitFiletButton;
-
-
     @FindBy(xpath = "//span[@id='br_all']")
     private WebElement openListOfBrandsButton;
-
-
     private String itemOnFilterForm = "//div[@id='manufacturers_presets']/ul/li[%s]/label";
-
     private String checkBoxForBrand="//div[@id='manufacturers_presets']/ul/li[%s]/input";
-
 
     @FindBy(xpath = "//div[@id='manufacturers_presets']/ul/li")
     private List<WebElement> listOfBrandCheckboxes;
 
-
     @FindBy(xpath = "//input[@id=\"match_submit\" and @class=\"submit-button\"]")
     private WebElement searchButton;
-
     @FindBy(xpath = "//a[@href='#']/span[text()='Запитання і побажання по підбору (пошуку) товару']")
     private WebElement answerForSearchingLink;
-
     @FindBy(xpath = "//span[text()='Рейтинг брендів']")
     private WebElement ratingOfBrandsButton;
 
-
-
     @FindBy(xpath = "//div[@class=\"all-link\"]/a")
     private WebElement showAllItemsButton;
-
-
 
 
     @FindBy(xpath = "//div[@class='model-short-div list-item--goods-group ms-grp ']")
@@ -56,13 +40,10 @@ public class SearchingWithFilterPage extends ParentPage {
     @FindBy(xpath = "//span[@class='u']")
     private List<WebElement> listOfResultsFromExtentedList;
 
-
-
     @FindBy(xpath = "//div[@class='model-short-div list-item--goods   ']")
     private WebElement itemFromResultList;
     @FindBy(xpath = "//a[@class='model-short-title no-u']")
     private List<WebElement> listOfResults;
-
 
 
     Actions actions = new Actions(webDriver);
@@ -71,18 +52,15 @@ public class SearchingWithFilterPage extends ParentPage {
         super(webDriver);
     }
 
-
     public SearchingWithFilterPage checkIsRedirectToSearchingWithFilterPage() {
         Assert.assertTrue(elementIsDisplayed(filtersForm));
         Assert.assertTrue(elementIsDisplayed(submitFiletButton));
         return this;
     }
 
-
     public SearchingWithFilterPage openAllListOfBrands() {
         elementIsDisplayed(openListOfBrandsButton);
         actions.moveToElement(openListOfBrandsButton).build().perform();
-
 
         JavascriptExecutor jse = (JavascriptExecutor) webDriver;
         jse.executeScript("window.scrollBy(0,100)", "");
@@ -137,7 +115,6 @@ public class SearchingWithFilterPage extends ParentPage {
 
                 String selectedCheckBox = listOfBrandCheckboxes.get(i).getText();
                 selectedBrand.add(selectedCheckBox);
-
 
                 //webDriver.findElement(By.xpath("item")).findElement(By.xpath("sub-item"));
             }

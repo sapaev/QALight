@@ -14,40 +14,27 @@ import java.util.List;
 
 public class ResultsSearchingPage extends ParentPage{
 
-
-
     @FindBy(xpath = "//div[@class='page-title']/h1[contains(text(),'За запитом ')]")
     private WebElement titleResultText;
-
     @FindBy(xpath = "//div[@class='model-short-div list-item--goods   ']")
     private WebElement itemFromResultList;
-
     @FindBy(xpath = "//a[@class='model-short-title no-u']")
     private List<WebElement> listOfResults;
 
-
     private String itemCard="//a[@class='model-short-title no-u' and contains(@title,'%s')]";
-
 
     @FindBy(xpath = "//div[@class='model-short-div list-item--goods-group ms-grp ']")
     private WebElement extentedlistOfResults;
-
     @FindBy(xpath = "//td[@class='pict_results']/table")
     private WebElement itemFromShortList;
 
     @FindBy(xpath = "//div[@class=' nobr']/a/span")
     private WebElement showListOfResultsButton;
 
-
     @FindBy(xpath = "//span[@class='u']")
     private List<WebElement> listOfResultsFromExtentedList;
 
-
-
     Actions actions=new Actions(webDriver);
-
-
-
 
     public ResultsSearchingPage(WebDriver webDriver) {
         super(webDriver);
@@ -59,8 +46,6 @@ public class ResultsSearchingPage extends ParentPage{
         return this;
     }
 
-        //Assert.assertTrue("Searching is successfully",elementIsDisplayed(itemFromResultList) || elementIsDisplayed(extentedlistOfResults));
-
 
     public ResultsSearchingPage checkIsRedirectOnResultsSearchingWithInputFieldPageAfterNegativeCase() throws InterruptedException {
         Thread.sleep(5000);
@@ -68,9 +53,6 @@ public class ResultsSearchingPage extends ParentPage{
         Assert.assertFalse(elementIsDisplayed("//a[@class='model-short-title no-u']"));
         return this;
     }
-
-
-
 
 public ResultsSearchingPage checkSuccessfullySearchingWithTextInItemsList(String itemName) throws InterruptedException {
         Thread.sleep(5000);

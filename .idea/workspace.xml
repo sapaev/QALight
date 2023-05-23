@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="46e0ea29-ec2e-442c-b044-529260152f31" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/Elements/BottomBar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ItemCardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ItemCardPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/ResultsSearchingPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/ResultsSearchingPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SearchingWithFilterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SearchingWithFilterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FindItemWithFilterTest/FindItemWithFilterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindItemWithFilterTest/FindItemWithFilterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ItemPageTest/ItemPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ItemPageTest/ItemPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/baseTest/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +68,7 @@
       <recent name="C:\Users\qasap\QALight\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CheckOfItemCounterInItemHistoryTest.testOfCounter">
+  <component name="RunManager" selected="Maven.RegressionAllTests">
     <configuration name="CheckOfItemCounterInItemHistoryTest.testOfCounter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
@@ -94,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemPageTest.checkOpeningCopiedLinkOfItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ItemPageTest.checkComparableBar" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="QALight" />
       <extension name="coverage">
         <pattern>
@@ -104,7 +111,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ItemPageTest" />
       <option name="MAIN_CLASS_NAME" value="ItemPageTest.ItemPageTest" />
-      <option name="METHOD_NAME" value="checkOpeningCopiedLinkOfItem" />
+      <option name="METHOD_NAME" value="checkComparableBar" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,20 +194,20 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="JUnit.ItemPageTest.checkComparableBar" />
       <item itemvalue="JUnit.CheckOfItemCounterInItemHistoryTest.testOfCounter" />
       <item itemvalue="JUnit.ItemPageTest" />
-      <item itemvalue="JUnit.ItemPageTest.checkOpeningCopiedLinkOfItem" />
       <item itemvalue="JUnit.ItemPageTest.openCardOfItem" />
       <item itemvalue="JUnit.RegressionTest" />
       <item itemvalue="Maven.RegressionAllTests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ItemPageTest.checkComparableBar" />
+        <item itemvalue="JUnit.ItemPageTest" />
         <item itemvalue="JUnit.CheckOfItemCounterInItemHistoryTest.testOfCounter" />
         <item itemvalue="JUnit.ItemPageTest.openCardOfItem" />
         <item itemvalue="JUnit.RegressionTest" />
-        <item itemvalue="JUnit.ItemPageTest" />
-        <item itemvalue="JUnit.ItemPageTest.checkOpeningCopiedLinkOfItem" />
       </list>
     </recent_temporary>
   </component>
@@ -346,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683796848100</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Дипломный проект">
+      <created>1684610331222</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1684610331222</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
