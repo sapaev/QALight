@@ -76,6 +76,7 @@ public class BaseTest {
     }
 
 
+
    // @After
     public void tearDown() {
     logger.info("----------"+testName.getMethodName()+" was ended----------");
